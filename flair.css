@@ -14,20 +14,7 @@
     height: 30px;
     display: block;
     float: left;
-}
-
-/* Specifically for Twitter's share button. */
-#twitterbar iframe {
-    display: block;
-    float: right;
-    margin-top: 2px;
-    margin-right: 4px;
-    margin-bottom: 2px;
-}
-
-.twitter-hashtag-button {
-    text-align: right;
-}
+}   
 
 #splash {
     background-image: url('https://jiscmail.identitylabs.org/jiscmail.png');
