@@ -51,6 +51,8 @@
             </div>
         </div> 
 
+        <div id="link">
+        </div>
         <div id="feed">
         </div>
     </div>
