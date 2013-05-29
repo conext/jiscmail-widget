@@ -52,9 +52,16 @@ function render_empty_feed() {
 function messagebox(message, description) {
     decommission_splash();
     $('#feed').hide();
+    $('#link').hide();
     $('#messagebox').show();
     $('#mbox_title').text(message);
     $('#mbox_description').html(description);
+}
+
+function showLink(message, description) {
+    decommission_splash();
+    $('#linkhref').text(message);
+    $('#linkhref').setAttribute("href","https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=" + message)
 }
 
 function entry() {
@@ -69,6 +76,9 @@ function entry() {
             current_group = ev.data;
             var group_name = ev.data.split(":");
             group_name = group_name[group_name.length-1];
+            clog("Your group: " + group_name);
+            showLink(group_name);
+
         } else {
             clog("no changes required, same group.");
         }
