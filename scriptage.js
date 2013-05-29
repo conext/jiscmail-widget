@@ -41,11 +41,11 @@ function decommission_splash() {
     $('#content').css('display', 'block');
 }
 
-function render_empty_feed() {
+function render_empty_feed(group_name) {
     clog("in render_empty_feed()");
     messagebox(
-        "No one tweeted.", 
-        "There doesn't seem to be anything happening for <span id='ht'>" + get_hashtag() + "</span>."
+        "No new messages.",
+        "There doesn't seem to be anything happening for <span id='ht'>" + group_name + "</span>."
     ); 
 }
 
@@ -78,7 +78,6 @@ function entry() {
             group_name = group_name[group_name.length-1];
             clog("Your group: " + group_name);
             showLink(group_name);
-
         } else {
             clog("no changes required, same group.");
         }
