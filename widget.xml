@@ -52,7 +52,7 @@
         </div> 
 
         <div id="link">
-        <a id="linkhref" href="#"></a>
+        <a target="_blank" id="linkhref" href="#"></a>
         </div>
         <div id="feed">
         </div>
