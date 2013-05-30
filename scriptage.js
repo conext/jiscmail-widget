@@ -49,12 +49,13 @@ function entry() {
             clog("Your group: " + group_name);
             showLink(group_name);
             $('#divRss').FeedEk({
-                FeedUrl : 'https://www.jiscmail.ac.uk/cgi-bin/webadmin?RSS&v=2.0&L=AAHPN',
+                FeedUrl : 'https://www.jiscmail.ac.uk/cgi-bin/webadmin?RSS&v=2.0&L=' + group_name,
                 MaxCount : 10,
                 ShowDesc : false,
                 ShowPubDate:true,
                 DescCharacterLimit:80,
-                TitleLinkTarget:'_blank'
+                TitleLinkTarget:'_blank',
+                groupName: group_name
             });
         } else {
             clog("no changes required, same group.");
