@@ -50,7 +50,7 @@ function entry() {
             showLink(group_name);
             $('#divRss').FeedEk({
                 FeedUrl : 'https://www.jiscmail.ac.uk/cgi-bin/webadmin?RSS&v=2.0&L=AAHPN',
-                MaxCount : 4,
+                MaxCount : 10,
                 ShowDesc : false,
                 ShowPubDate:true,
                 DescCharacterLimit:80,
