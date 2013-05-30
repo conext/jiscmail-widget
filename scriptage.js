@@ -60,7 +60,7 @@ function messagebox(message, description) {
 
 function showLink(message, description) {
     decommission_splash();
-    $('#linkhref').text("Visit mail list for " + message);
+    $('#linkhref').text(message.toUpperCase() + " Mailing List");
     $('#linkhref').attr("href","https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=" + message)
 }
 
