@@ -28,6 +28,15 @@ function messagebox(message, description) {
     $('#mbox_description').html(description);
 }
 
+function rssBox(message, description) {
+    decommission_splash();
+    $('#feed').hide();
+    $('#messagebox').show();
+    $('#mbox_title').text(message);
+    $('#mbox_description').html(description);
+}
+
+
 function showLink(message, description) {
     decommission_splash();
     $('#linkhref').text(message.toUpperCase() + " Mailing List");

@@ -1,8 +1,8 @@
 /* FeedEk jQuery RSS/ATOM Feed Plugin v1.1.2
-*  http://jquery-plugins.net/FeedEk/FeedEk.html
-*  Author : Engin KIZIL http://www.enginkizil.com
-*  http://opensource.org/licenses/mit-license.php  
-*/
+ *  http://jquery-plugins.net/FeedEk/FeedEk.html
+ *  Author : Engin KIZIL http://www.enginkizil.com
+ *  http://opensource.org/licenses/mit-license.php
+ */
 
 (function ($) {
     $.fn.FeedEk = function (opt) {
@@ -26,36 +26,36 @@
                 $("#" + id).empty();
                 var s = "";
                 if (data.responseData.feed.entries.length > 0) {
-                $.each(data.responseData.feed.entries, function (e, item) {
-                    s += '<li><div class="itemTitle"><a href="' + item.link + '" target="' + def.TitleLinkTarget + '" >' + item.title + "</a></div>";
-                    if (def.ShowPubDate) {
-                        i = new Date(item.publishedDate);
-                        s += '<div class="itemDate">' + i.toLocaleDateString() + "</div>";
-                    }
-                    if (def.ShowDesc) {
-                        if (def.DescCharacterLimit > 0 && item.content.length > def.DescCharacterLimit) {
-                            s += '<div class="itemContent">' + item.content.substr(0, def.DescCharacterLimit) + "...</div>";
+                    $.each(data.responseData.feed.entries, function (e, item) {
+                        s += '<li><div class="itemTitle"><a href="' + item.link + '" target="' + def.TitleLinkTarget + '" >' + item.title + "</a></div>";
+                        if (def.ShowPubDate) {
+                            i = new Date(item.publishedDate);
+                            s += '<div class="itemDate">' + i.toLocaleDateString() + "</div>";
                         }
-                        else {
-                            s += '<div class="itemContent">' + item.content + "</div>";
+                        if (def.ShowDesc) {
+                            if (def.DescCharacterLimit > 0 && item.content.length > def.DescCharacterLimit) {
+                                s += '<div class="itemContent">' + item.content.substr(0, def.DescCharacterLimit) + "...</div>";
+                            }
+                            else {
+                                s += '<div class="itemContent">' + item.content + "</div>";
+                            }
                         }
-                    }
-                });
-                $("#" + id).append('<ul class="feedEkList">' + s + "</ul>");
+                    });
+                    $("#" + id).append('<ul class="feedEkList">' + s + "</ul>");
                 } else {
                     clog("in render_empty_feed()");
-                    messagebox(
+                    rssBox(
                         "No new messages.",
                         "There doesn't seem to be anything happening for <span id='ht'>" + def.groupName + "</span>."
                     );
                 }
             },
             error: function() {
-                    clog("in render_empty_feed()");
-                    messagebox(
-                        "No new messages.",
-                        "There doesn't seem to be anything happening for <span id='ht'>" + def.groupName + "</span>."
-                    );
+                clog("in render_empty_feed()");
+                rssBox(
+                    "No new messages.",
+                    "There doesn't seem to be anything happening for <span id='ht'>" + def.groupName + "</span>."
+                );
             }
 
         });
