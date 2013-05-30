@@ -4,17 +4,14 @@
     display: none;
 }
 
-#twitterbar {
-    background-color: #9AE4E8;
-    min-height: 20px;
-    color: #fff;
+#etherpadbar {
+    background-color: #1e3e73;
+    background-image: url('https://jiscmail.identitylabs.org/jiscmail.png');
+    background-size: auto 24px;
+    background-position: 3px center;
+    background-repeat: no-repeat;
+    min-height: 32px;
 }
-
-#twitterbar img {
-    height: 30px;
-    display: block;
-    float: left;
-}   
 
 #splash {
     background-image: url('https://jiscmail.identitylabs.org/jiscmail.png');
