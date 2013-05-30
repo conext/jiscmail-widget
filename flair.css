@@ -26,6 +26,11 @@
     clear: both;
 }
 
+#link {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
+}
+
 #messagebox {
     margin-top: 50px;
     text-align: center;
@@ -44,8 +49,6 @@
 
 #ht {
     font-family: 'Open Sans', sans-serif;
-    
-
 }   
 
 #feed {
