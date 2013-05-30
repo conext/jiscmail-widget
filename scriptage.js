@@ -51,9 +51,9 @@ function entry() {
             $('#divRss').FeedEk({
                 FeedUrl : 'https://www.jiscmail.ac.uk/cgi-bin/webadmin?RSS&v=2.0&L=AAHPN',
                 MaxCount : 4,
-                ShowDesc : true,
+                ShowDesc : false,
                 ShowPubDate:true,
-                DescCharacterLimit:100,
+                DescCharacterLimit:80,
                 TitleLinkTarget:'_blank'
             });
         } else {
