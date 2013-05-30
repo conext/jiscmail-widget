@@ -22,7 +22,7 @@
         $.ajax({
             url: "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=" + def.MaxCount + "&output=json&q=" + encodeURIComponent(def.FeedUrl) + "&hl=en&callback=?",
             dataType: "json",
-            done: function (data) {
+            success: function (data) {
                 $("#" + id).empty();
                 var s = "";
                 $.each(data.responseData.feed.entries, function (e, item) {
@@ -42,7 +42,7 @@
                 });
                 $("#" + id).append('<ul class="feedEkList">' + s + "</ul>");
             },
-            fail: function() {
+            error: function() {
                     clog("in render_empty_feed()");
                     messagebox(
                         "No new messages.",
