@@ -59,27 +59,6 @@
          </div>
     </div>
 
-    <!-- model, to be cloned -->
-    <!-- not using id since jquery duplicates it anyway, fu -->
-    <div class="entry clone-model">
-        <div class="avatar">
-            <img src="#">
-        </div>
-        <div class="post">
-            <div class="post-author">
-            <span class="author-username">
-            author
-            </span>
-            <span class="author-handle">
-            @athor
-            </span>
-            </div>
-            <div class="post-content">
-            content
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div> 
     ]]>
     </Content>
 </Module>
