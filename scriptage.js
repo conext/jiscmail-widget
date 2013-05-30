@@ -49,7 +49,7 @@ function entry() {
             clog("Your group: " + group_name);
             showLink(group_name);
             $('#divRss').FeedEk({
-                FeedUrl : 'https://www.jiscmail.ac.uk/cgi-bin/webadmin?RSS&v=2.0&L=' + group_name,
+                FeedUrl : 'https://www.jiscmail.ac.uk/cgi-bin/webadmin?RSS&v=2.0&L=AAHPN',
                 MaxCount : 4,
                 ShowDesc : true,
                 ShowPubDate:true,
