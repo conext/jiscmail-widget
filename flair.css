@@ -29,6 +29,7 @@
 #link {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+    padding:4px;
 }
 
 #messagebox {
@@ -113,12 +114,12 @@ div.post {
 .feedEkList {
     font-family: 'Open Sans', sans-serif;
     list-style:none outside none;
-    padding:4px 6px;
+    padding:4px;
     color:#494949;
 }
 
 .feedEkList li {
-font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     border-bottom: 1px dotted #ccc;
     margin-top: 3px;
@@ -129,8 +130,9 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .itemTitle a {
+    font-family: 'Open Sans', sans-serif;
     font-weight:bold;
-    color:#4EBAFF !important;
+    color:#494949;
     text-decoration:none
 }
 
@@ -139,6 +141,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .itemDate{
+    font-family: 'Open Sans', sans-serif;
     font-size:11px;
     color:#AAAAAA;
 }
