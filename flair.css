@@ -116,6 +116,7 @@ div.post {
     list-style:none outside none;
     padding:4px;
     color:#494949;
+    -webkit-padding-start: 10px;
 }
 
 .feedEkList li {
