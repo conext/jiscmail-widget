@@ -43,6 +43,10 @@
         <div id="bar">
         </div>
 
+        <div id="link">
+        Visit <a target="_blank" id="linkhref" href="#"></a>
+        </div>
+        
         <div id="messagebox">
             <div id="mbox_title">
             _
@@ -52,9 +56,7 @@
             </div>
         </div> 
 
-        <div id="link">
-        Visit <a target="_blank" id="linkhref" href="#"></a>
-        </div>
+
         <div id="divRss">
          </div>
     </div>
