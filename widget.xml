@@ -38,8 +38,7 @@
         &nbsp;
     </div>
     <div id="content">
-        <div id="twitterbar">
-            <img src="https://jiscmail.identitylabs.org/jiscmail.png">
+        <div id="bar">
         </div>
 
         <div id="messagebox">

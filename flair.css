@@ -4,8 +4,8 @@
     display: none;
 }
 
-#etherpadbar {
-    background-color: #1e3e73;
+#bar {
+    background-color: #e2e2e2;
     background-image: url('https://jiscmail.identitylabs.org/jiscmail.png');
     background-size: auto 24px;
     background-position: 3px center;
@@ -17,7 +17,7 @@
     background-image: url('https://jiscmail.identitylabs.org/jiscmail.png');
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: #00abf0;
+    background-color: #e2e2e2;
     height: 100%;
     width: 100%;
 }
