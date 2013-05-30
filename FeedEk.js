@@ -25,6 +25,7 @@
             success: function (data) {
                 $("#" + id).empty();
                 var s = "";
+                if (data.responseData.feed.entries.length > 0) {
                 $.each(data.responseData.feed.entries, function (e, item) {
                     s += '<li><div class="itemTitle"><a href="' + item.link + '" target="' + def.TitleLinkTarget + '" >' + item.title + "</a></div>";
                     if (def.ShowPubDate) {
@@ -41,6 +42,13 @@
                     }
                 });
                 $("#" + id).append('<ul class="feedEkList">' + s + "</ul>");
+                } else {
+                    clog("in render_empty_feed()");
+                    messagebox(
+                        "No new messages.",
+                        "There doesn't seem to be anything happening for <span id='ht'>" + groupName + "</span>."
+                    );
+                }
             },
             error: function() {
                     clog("in render_empty_feed()");
