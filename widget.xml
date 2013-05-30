@@ -30,6 +30,7 @@
     <script type="text/javascript" src="https://jiscmail.identitylabs.org/scriptage.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="https://raw.github.com/placemarker/jQuery-MD5/master/jquery.md5.js"></script>
+    <script type="text/javascript" src="https://raw.github.com/enginkizil/FeedEk/master/js/FeedEk.js"></script>
     <script type="text/javascript">
         gadgets.util.registerOnLoadHandler(entry);
     </script>
@@ -52,10 +53,10 @@
         </div> 
 
         <div id="link">
-        <a target="_blank" id="linkhref" href="#"></a>
+        Visit <a target="_blank" id="linkhref" href="#"></a>
         </div>
-        <div id="feed">
-        </div>
+        <div id="divRss">
+         </div>
     </div>
 
     <!-- model, to be cloned -->
