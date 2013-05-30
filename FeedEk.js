@@ -46,7 +46,7 @@
                     clog("in render_empty_feed()");
                     messagebox(
                         "No new messages.",
-                        "There doesn't seem to be anything happening for <span id='ht'>" + groupName + "</span>."
+                        "There doesn't seem to be anything happening for <span id='ht'>" + def.groupName + "</span>."
                     );
                 }
             },
@@ -54,7 +54,7 @@
                     clog("in render_empty_feed()");
                     messagebox(
                         "No new messages.",
-                        "There doesn't seem to be anything happening for <span id='ht'>" + groupName + "</span>."
+                        "There doesn't seem to be anything happening for <span id='ht'>" + def.groupName + "</span>."
                     );
             }
 
