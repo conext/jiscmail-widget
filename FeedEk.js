@@ -18,7 +18,7 @@
 
         var id = $(this).attr("id");
         var i;
-        $("#" + id).empty().append('<img src="https://jiscmail-widget.identitylabs.org/loader.gif" />');
+        $("#" + id).empty().append('<img src="https://jiscmail-widget.identitylabs.org/loader.gif" />'); /* CONFIGURE */
         $.ajax({
             url: "https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=" + def.MaxCount + "&output=json&q=" + encodeURIComponent(def.FeedUrl) + "&hl=en&callback=?",
             dataType: "json",
