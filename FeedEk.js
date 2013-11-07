@@ -46,7 +46,7 @@
                     clog("in render_empty_feed()");
                     rssBox(
                         "No new messages.",
-                        "If the archives for the <span id='ht'>" + group_name + "</span> list are private, it is not possible to show messages here. View the archives directly one the <a href=\"https://www.jiscmail.ac.uk/" + group_name + "\">JiscMail web site</a>."
+                        "If the archives for this group's JiscMail list are private, it is not possible to show messages here. View the archives directly on the JiscMail web site using the link above."
                     );
                 }
             },
@@ -54,7 +54,7 @@
                 clog("in render_empty_feed()");
                 rssBox(
                     "No new messages.",
-                    "If the archives for the <span id='ht'>" + group_name + "</span> list are private, it is not possible to show messages here. View the archives directly one the <a href=\"https://www.jiscmail.ac.uk/" + group_name + "\">JiscMail web site</a>."
+                    "If the archives for this group's JiscMail list are private, it is not possible to show messages here. View the archives directly on the JiscMail web site using the link above."
                 );
             }
 
